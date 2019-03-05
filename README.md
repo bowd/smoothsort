@@ -10,7 +10,7 @@ __Run tests__
 $ cargo test
 ```
 
-__Run benchmarks
+__Run benchmarks__
 
 ```
 $ rustup run nightly cargo bench

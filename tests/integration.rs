@@ -1,10 +1,10 @@
-use leonardo_heaps::LeonardoHeap;
+use smoothsort::LeonardoHeap;
 use rand::Rng;
 
 #[test]
 fn sort() {
     let source = gen_source(100);
-    let source = leonardo_heaps::sort(source);
+    let source = smoothsort::sort(source);
 
     let mut expected = source.clone();
     expected.sort();
@@ -14,7 +14,7 @@ fn sort() {
 #[test]
 fn sort_by() {
     let source = gen_source(100);
-    let source = leonardo_heaps::sort_by(source, |a, b| b > a);
+    let source = smoothsort::sort_by(source, |a, b| b > a);
 
     let mut expected = source.clone();
     expected.sort_by(|a, b| b.cmp(a));

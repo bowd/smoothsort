@@ -1,5 +1,5 @@
 [package]
-name = "leonardo_heaps"
+name = "smoothsort"
 version = "0.1.0"
 authors = ["Bogdan Dumitru <dumbogdan@gmail.com>"]
 edition = "2018"

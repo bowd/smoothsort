@@ -9,7 +9,7 @@ fn benchmark_lh_sort_10000(b: &mut Bencher) {
     for _ in 0..10 {
         b.iter(move || {
             let source = gen_source(10000);
-            leonardo_heaps::sort(source)
+            smoothsort::sort(source)
         })
     }
 }
@@ -30,7 +30,7 @@ fn benchmark_lh_sort_best_case_10000(b: &mut Bencher) {
         b.iter(|| {
             let mut source = gen_source(10000);
             source.sort();
-            leonardo_heaps::sort(source)
+            smoothsort::sort(source)
         })
     }
 }
